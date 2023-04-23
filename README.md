@@ -18,19 +18,19 @@ cd neural_network/
 Then, for good measure, it's always good to make a VirtualEnvironment (check [documentation](https://docs.python.org/3/library/venv.html#how-venvs-work)), if you don't have 
 the venv library install on your python, do :
 ````shell
-python3 -m pip install virtualenv
+python -m pip install virtualenv
 ````
 
 Then, once it's downloaded :
 
 ````shell
-python3 -m venv ./.venv/
+python -m venv ./.venv/
 ./venv/Scripts/activate
 ````
 
 You are now in the Virtual Environment, but there is no library installed. To get them, install with the command :
 ````shell
-python3 -m pip install --upgrade pip
+python -m pip install --upgrade pip
 pip install -r "requirements.txt"
 ````
 
@@ -39,7 +39,7 @@ Be careful if you use PyCharm or any other IDE, to use the interpreter found in 
 Now, you can launch the main file :
 
 ````shell
-python3 ./src/main.py
+python ./src/main.py
 ````
 
 ## Explanation
