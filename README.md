@@ -34,7 +34,7 @@ pip install --upgrade pip
 pip install -r "requirements.txt"
 ````
 
-Be careful if you use PyCharm or any other IDE, to use the interpreter found in the .venv/Scripts/python.exe !
+Be careful if you use PyCharm or any other IDE to use the interpreter found in the .venv/Scripts/python.exe !
 
 Now, you can launch the main file :
 
