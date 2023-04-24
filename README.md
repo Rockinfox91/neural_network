@@ -18,7 +18,7 @@ cd neural_network/
 Then, for good measure, it's always good to make a VirtualEnvironment (check [documentation](https://docs.python.org/3/library/venv.html#how-venvs-work)), if you don't have 
 the venv library install on your python, do :
 ````shell
-python -m pip install virtualenv
+pip install virtualenv
 ````
 
 Then, once it's downloaded :
@@ -30,7 +30,7 @@ python -m venv ./.venv/
 
 You are now in the Virtual Environment, but there is no library installed. To get them, install with the command :
 ````shell
-python -m pip install --upgrade pip
+pip install --upgrade pip
 pip install -r "requirements.txt"
 ````
 
