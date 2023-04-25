@@ -4,10 +4,6 @@ from src.node.node import Node
 
 class TestNode(unittest.TestCase):
 
-    # Test privacy of Node.__total_node
-    def test_total_node_privacy(self):
-        with self.assertRaises(AttributeError):
-            self.assertEqual(Node.total_node, 0)
     # Create a node Errors
     def test_node_id(self):
         node1 = Node(1, 2)
@@ -43,8 +39,18 @@ class TestNode(unittest.TestCase):
 
     # Print a node Errors
     def test_print_node(self):
+        Node.reset_number_total_node()
         node = Node(1, 2)
-        self.assertEqual(str(node), f"Node {node.id}: ({node.n_input},{node.n_output})")
+        self.assertEqual(str(node), f"Node 0: (1,2)")
+
+    # Test for total node number
+    def test_total_node(self):
+        Node.reset_number_total_node()
+        self.assertEqual(Node.get_number_total_node(), 0)
+        node1 = Node(1, 2)
+        self.assertEqual(Node.get_number_total_node(), 1)
+        node2 = Node(1, 2)
+        self.assertEqual(Node.get_number_total_node(), 2)
 
 
 if __name__ == '__main__':
