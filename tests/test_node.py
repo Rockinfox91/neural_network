@@ -14,8 +14,8 @@ class TestNode(unittest.TestCase):
     def test_node_id(self):
         node1 = Node(1, 2)
         node2 = Node(2, 2)
-        self.assertEqual(node1.id, 0)
-        self.assertEqual(node2.id, 1)
+        self.assertEqual(node1.get_id(), 0)
+        self.assertEqual(node2.get_id(), 1)
 
     def test_valid_input_output(self):
         node = Node(3, 4)
