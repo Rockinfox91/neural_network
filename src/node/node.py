@@ -25,5 +25,6 @@ class Node:
 
 if __name__ == '__main__':
     print("------- Main in node.py -------")
-
+    node1 = Node(1, 2)
+    print(node1)
     print("------- End node.py -------")

@@ -4,6 +4,12 @@ from src.node.node import Node
 
 class TestNode(unittest.TestCase):
 
+    def test_reset_number_total_node(self):
+        node1 = Node(1, 1)
+        node2 = Node(2, 2)
+        Node.reset_number_total_node()
+        self.assertEqual(Node.get_number_total_node(), 0)
+
     # Create a node Errors
     def test_node_id(self):
         node1 = Node(1, 2)
